@@ -1,0 +1,9 @@
+/src/PrestaShopBundle/Resources/views/Admin/Product/CatalogPage/Lists/products_table.html.twig
+/src/PrestaShopBundle/Resources/views/Admin/Product/CatalogPage/Lists/list.html.twig
+/src/Adapter/Product/AdminProductDataProvider.php
+/src/PrestaShopBundle/Controller/Admin/ProductController.php
+/src/PrestaShopBundle/Entity/AdminFilter.php
+/src/PrestaShopBundle/Resources/config/admin/routing_product.yml
+/src/PrestaShopBundle/Resources/config/routing/admin/routing_product.yml
+/src/Adapter/Admin/AbstractAdminQueryBuilder.php
+/admin123/themes/default/js/bundle/product/catalog.js
