@@ -4,6 +4,9 @@ class Address extends AddressCore
     /* Normally, in Prestashop, an used address is never deleted, is just marked as $address->deleted = 1 and updated
     ** To check if an address is being used, only the table ps_orders is checked by default. This causes error in AdminCartController
     ** if there is any cart with a deleted address, because ps_cart is not being checked. With this override, now it is
+    ** TIP: Run the following queries to remove incorrect ids from ps_cart table
+    ** UPDATE ps_cart SET id_address_delivery = 0 WHERE id_address_delivery NOT IN (SELECT id_address FROM ps_address) AND id_address_delivery != 0
+    ** UPDATE ps_cart SET id_address_invoice = 0 WHERE id_address_invoice NOT IN (SELECT id_address FROM ps_address) AND id_address_invoice != 0
     */
     
     public function isUsed()
